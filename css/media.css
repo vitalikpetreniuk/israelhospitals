@@ -590,6 +590,8 @@
   .request {
     padding-left: 0;
     padding-right: 0; }
+    .request .def_btn {
+      width: 100%; }
   .doctor-img {
     width: 50%;
     height: 345px; }
@@ -1730,11 +1732,8 @@
       text-align: center; }
   .doctors-img {
     margin-bottom: 15px; }
-  .clinic-data-row {
-    display: block; }
-    .clinic-data-row > div {
-      width: 100% !important;
-      padding: 0 !important; } }
+  .clinic-data-row > div:first-child {
+    padding-right: 10px; } }
 
 @media (max-width: 379px) {
   .doctor-tabs-block {
@@ -1789,7 +1788,11 @@
   .custom-tabs .tabs-nav ul li {
     width: 100%; }
     .custom-tabs .tabs-nav ul li:not(:nth-last-child(1)) {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .clinic-data-row {
+    font-size: 13px; }
+    .clinic-data-row > div:last-child {
+      text-align: right; } }
 
 @media (max-width: 359px) {
   .search-sm form input[type='search'] {

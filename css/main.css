@@ -3465,7 +3465,7 @@ input[type='submit'] {
     content: '*';
     position: absolute;
     top: 0;
-    left: -12px;
+    left: -9px;
     color: #db5d5d; }
 
 .show-field {

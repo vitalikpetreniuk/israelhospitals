@@ -1120,8 +1120,8 @@
 					<div class="left_side">
 						<div class="compare_form_right">
 							<div class="flex-block">
-								<span class="name flex-el"><input placeholder="Имя" type="text"></span>
-								<div class="tel flex-el"><input placeholder="+7 (499)" type="tel"></div>
+								<span class="required name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+								<div class="required tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></div>
 							</div>
 						</div>
 					</div>
@@ -1130,6 +1130,7 @@
 						<input type="checkbox" class="checkbox" id="checkbox123">
 						<label for="checkbox123" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
 					</div>
+					<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
 				</form>
 				<ul class="list_modal hidden-to-xs">
 					<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
@@ -1207,33 +1208,65 @@
 	<div id="compare" class="compare">
 		<div class="container">
 			<div class="wrapper_l">
-			<div class="compare_form_wrapper">
-				<h2>Сравните цены на лечения в клиниках</h2>
-				<span>В течение 24 часов вы получите ответ по выбранным клиникам</span>
-				<form class="form_wrapper">
-					<div class="compare_form_left">
-						<div class="demo">
-							<div class="control-group">
-								<select class="selectize" data-placeholder="Выберите направление">
-									<option value="">None</option>
-									<option value="4">Thomas Edison</option>
-									<option value="1">Nikola</option>
-									<option value="3">Nikola Tesla</option>
-									<option value="5">Arnold Schwarzenegger</option>
-								</select>
+				<div class="compare_form_wrapper">
+					<h2>Сравните цены на лечения в клиниках</h2>
+					<span>В течение 24 часов вы получите ответ по выбранным клиникам</span>
+					<form class="form_wrapper">
+						<div class="compare_form_left">
+							<div class="demo">
+								<div class="control-group">
+									<select class="selectize" data-placeholder="Выберите направление">
+										<option value="">None</option>
+										<option value="4">Thomas Edison</option>
+										<option value="1">Nikola</option>
+										<option value="3">Nikola Tesla</option>
+										<option value="5">Arnold Schwarzenegger</option>
+									</select>
+								</div>
+							</div>
+							<div class="check_wrapper">
+								<ul>
+									<li><input type="checkbox" class="checkbox" id="checkbox100" /><label for="checkbox100" class=""><span class="form_agree">Ассута</span></label></li>
+									<li><input type="checkbox" class="checkbox" id="checkbox200" /><label for="checkbox200" class=""><span class="form_agree">Ихилов</span></label></li>
+									<li><input checked type="checkbox" class="checkbox" id="checkbox300" /><label for="checkbox300" class=""><span class="form_agree">Хадасса</span></label></li>
+									<li><input checked type="checkbox" class="checkbox" id="checkbox400" /><label for="checkbox400" class=""><span class="form_agree">Ихилов</span></label></li>
+									<li><input type="checkbox" class="checkbox" id="checkbox500" /><label for="checkbox500" class=""><span class="form_agree">Ассута</span></label></li>
+									<li><input type="checkbox" class="checkbox" id="checkbox600" /><label for="checkbox600" class=""><span class="form_agree">Хадасса</span></label></li>
+								</ul>
+								<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+							</div>
+							<div class="second_list visible-to-xs">
+								<div class="second_list_item">
+									<div class="second_list_item-img"><img src="img/icons/list.svg" alt="" width="39"></div>
+									<p>Точная смета и подробный план лечения</p>
+								</div>
+								<div class="second_list_item">
+									<div class="second_list_item-img"><img src="img/icons/healthcare_blue.svg" alt="" width="50"></div>
+									<p>Профессиональная консультация по выбору клиники</p>
+								</div>
+								<div class="second_list_item">
+									<div class="second_list_item-img"><img src="img/icons/doctor_blue.svg" alt="" width="44"></div>
+									<p>Доступ к лучшим врачам без очередей</p>
+								</div>
+							</div>
+							<div class="message_guarantee visible-to-xs">Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</div>
+						</div>
+						<div class="compare_form_right">
+							<div>
+								<span class="required"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+								<span class="required"><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+								<span><input placeholder="E-mail" type="text"></span>
+								<span><textarea placeholder="Вопрос или комментарий"></textarea></span>
+								<div class="file-upload"><label><input type="file" name="file"><span>Прикрепить диагноз</span></label>
+								</div>
+								<span><input class="def_btn submit-done" type="submit" value="Получить сравнение цен"><a href="#modal-thanks-comp" rel="modal:open">thanks</a></span>
+								<div class="check_wrapper">
+									<input type="checkbox" class="checkbox" id="checkbox99" checked><label for="checkbox99" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+									<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+								</div>
 							</div>
 						</div>
-						<div class="check_wrapper">
-							<ul>
-								<li><input type="checkbox" class="checkbox" id="checkbox100" /><label for="checkbox100" class=""><span class="form_agree">Ассута</span></label></li>
-								<li><input type="checkbox" class="checkbox" id="checkbox200" /><label for="checkbox200" class=""><span class="form_agree">Ихилов</span></label></li>
-								<li><input checked type="checkbox" class="checkbox" id="checkbox300" /><label for="checkbox300" class=""><span class="form_agree">Хадасса</span></label></li>
-								<li><input checked type="checkbox" class="checkbox" id="checkbox400" /><label for="checkbox400" class=""><span class="form_agree">Ихилов</span></label></li>
-								<li><input type="checkbox" class="checkbox" id="checkbox500" /><label for="checkbox500" class=""><span class="form_agree">Ассута</span></label></li>
-								<li><input type="checkbox" class="checkbox" id="checkbox600" /><label for="checkbox600" class=""><span class="form_agree">Хадасса</span></label></li>
-							</ul>
-						</div>
-						<div class="second_list visible-to-xs">
+						<div class="second_list hidden-to-xs">
 							<div class="second_list_item">
 								<div class="second_list_item-img"><img src="img/icons/list.svg" alt="" width="39"></div>
 								<p>Точная смета и подробный план лечения</p>
@@ -1247,40 +1280,11 @@
 								<p>Доступ к лучшим врачам без очередей</p>
 							</div>
 						</div>
-						<div class="message_guarantee visible-to-xs">Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</div>
-					</div>
-					<div class="compare_form_right">
-						<div>
-							<span><input placeholder="Имя" type="text"></span>
-							<span><input placeholder="Телефон" type="tel"></span>
-							<span><input placeholder="E-mail" type="text"></span>
-							<span><textarea placeholder="Вопрос или комментарий"></textarea></span>
-							<div class="file-upload"><label><input type="file" name="file"><span>Прикрепить диагноз</span></label>
-							</div>
-							<span><input class="def_btn submit-done" type="submit" value="Получить сравнение цен"><a href="#modal-thanks-comp" rel="modal:open">thanks</a></span>
-							<div class="check_wrapper">
-								<input type="checkbox" class="checkbox" id="checkbox99"><label for="checkbox99" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
-							</div>
-						</div>
-					</div>
-					<div class="second_list hidden-to-xs">
-						<div class="second_list_item">
-							<div class="second_list_item-img"><img src="img/icons/list.svg" alt="" width="39"></div>
-							<p>Точная смета и подробный план лечения</p>
-						</div>
-						<div class="second_list_item">
-							<div class="second_list_item-img"><img src="img/icons/healthcare_blue.svg" alt="" width="50"></div>
-							<p>Профессиональная консультация по выбору клиники</p>
-						</div>
-						<div class="second_list_item">
-							<div class="second_list_item-img"><img src="img/icons/doctor_blue.svg" alt="" width="44"></div>
-							<p>Доступ к лучшим врачам без очередей</p>
-						</div>
-					</div>
-					<div class="message_guarantee hidden-to-xs">Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</div>
-				</form>
+						<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+						<div class="message_guarantee hidden-to-xs">Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</div>
+					</form>
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 	<div class="comments">
@@ -1511,8 +1515,8 @@
 		<div class="left_side">
 			<div class="compare_form_right">
 				<div class="flex-block">
-					<span class="name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
-					<span class="tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
 				</div>
 			</div>
 		</div>

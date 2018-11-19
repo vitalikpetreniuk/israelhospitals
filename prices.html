@@ -579,7 +579,7 @@
 	<div class="cons">
 		<div class="container">
 			<div class="wrapper_l">
-				<h2>Получите профессиональную консультацию<br> <span class="visible-to-xs">по лечению в Израиле в течение 2 часов</span></h2>
+				<h2>Получите консультацию<span class="visible-to-xs"> по диагностике<br> в Израиле в течение 2 часов</span></h2>
 				<div class="m_text_wrapper">
 					<div class="left_side visible-to-xs">
 						<ul class="list_modal">
@@ -602,8 +602,8 @@
 					<div class="left_side">
 						<div class="compare_form_right">
 							<div class="flex-block">
-								<span class="name flex-el"><input placeholder="Имя" type="text"></span>
-								<div class="tel flex-el"><input placeholder="+7 (499)" type="tel"></div>
+								<span class="required name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+								<div class="required tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></div>
 							</div>
 						</div>
 					</div>
@@ -612,6 +612,7 @@
 						<input type="checkbox" class="checkbox" id="checkbox123">
 						<label for="checkbox123" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
 					</div>
+					<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
 				</form>
 				<ul class="list_modal hidden-to-xs">
 					<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
@@ -685,8 +686,8 @@
 		<div class="left_side">
 			<div class="compare_form_right">
 				<div class="flex-block">
-					<span class="name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
-					<span class="tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
 				</div>
 			</div>
 		</div>
@@ -785,10 +786,10 @@
 			</div>
 			<div class="compare_form_right">
 				<div>
-					<span><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
-					<span><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
-					<span><input placeholder="E-mail" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
-					<span><textarea placeholder="Вопрос или комментарий"></textarea><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required"><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><input placeholder="E-mail" type="text"></span>
+					<span><textarea placeholder="Вопрос или комментарий"></textarea></span>
 					<div class="file-upload">
 						<label>
 							<input type="file" name="file">
