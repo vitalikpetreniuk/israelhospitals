@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<title>prices</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="stylesheet" href="css/jquery.modal.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/selectize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
+    </head>
+<body>
+<header>
+	<div class="container">
+		<div class="top_line">
+			<div class="top_line_text">Официальный представитель Израильских клиник</div>
+			<div class="top_line_menu">
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">О медицине в Израиле</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="blue_line_wrapper">
+		<div class="container">
+			<div class="two_s_left">
+				<div class="hidden-to-sm menu-toggle"><button type="button"><span></span></button></div>
+				<div class="logot"><a href="#"><img src="img/pics/logo.png" alt=""></a></div>
+				<div class="top_contacts">
+					<div class="num visible-to-md">
+						<p><img src="img/icons/israel.svg" alt="">Телефон в Израиле</p>
+						<a href="tel:+74993482308">+7 (499) 348 23 08</a>
+					</div>
+					<div class="num w">
+						<p><img src="img/icons/russia.svg" alt="">Телефон в России</p>
+						<a href="tel:+74993482308">+7 (499) 348 23 08</a>
+						<button><img src="img/icons/sort-down_white.svg" alt=""></button>
+					</div>
+					<div class="popup_numbers">
+						<div>
+							<img src="img/icons/russia.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Россия</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<div class="hidden-to-md">
+							<img src="img/icons/israel.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Израиль</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<div>
+							<img src="img/icons/ukraine.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Украинв</span><span>+38 044 227 77 71</span></a></div>
+						</div>
+						<div>
+							<img src="img/icons/kazakhstan.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Казахстан</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<button><img src="img/icons/sort-down_green.svg" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<div class="two_s_right"><a class="def_btn" href="#modal-callback" rel="modal:open">Заказать звонок</a></div>
+			<div class="header-sm hidden-to-sm">
+				<div class="button-contacts"><button type="button"><img src="img/icons/call.svg" alt="" width="15"></button></div>
+				<div class="button-search"><button type="button"><img src="img/icons/search-white.svg" alt="" width="15"></button></div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="header-in">
+				<div class="top-menu">
+					<ul>
+						<li class="folder">
+							<a href="#">Клиники</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Лучшие клиники</strong>
+									<ul class="top-menu-imgs">
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Шиба</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Рамбам</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Асаф ха-Рофэ</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Герцлия М.Ц.</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Ихилов</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Рабин</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Ассута</span></a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Другие клиники</strong>
+									<ul>
+										<li><a href="#">Хорев</a></li>
+										<li><a href="#">Хадасса</a></li>
+										<li><a href="#">Шнайдер</a></li>
+										<li><a href="#">Рамат-Авив М.Ц</a></li>
+										<li><a href="#">Клиника Вольфсон</a></li>
+										<li><a href="#">Клиника Элиша</a></li>
+										<li><a href="#">Паула</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="folder">
+							<a href="#">Онкология</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Направления</strong>
+									<ul class="top-menu-icons">
+										<li><a href="#"><span><img src="img/icons/organs/thorax%201.svg" alt="" width="30"></span><span>Рак органов грудной клетки</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/bone%205.svg" alt="" height="31"></span><span>Рак костей и мягких тканей</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/dermis%209.svg" alt="" width="28"></span><span>Рак кожи</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/cells%202.svg" alt="" width="30"></span><span>Онкогематология и рак лимфатической системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/brain%206.svg" alt="" width="21"></span><span>Опухоли головного мозга</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/neuron%2010.svg" alt="" width="29"></span><span>Опухоли нервной системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/stomach%203.svg" alt="" width="30"></span><span>Опухоли органов пищеварения</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/pancreas%207.svg" alt="" width="30"></span><span>Рак эндокринной системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/head-and-neck%2011.svg" alt="" width="21"></span><span>Онкология головы и шеи</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/kidneys%204.svg" alt="" width="30"></span><span>Онкоурология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/uterus%208.svg" alt="" width="34"></span><span>Онкогинекология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/cancer%2012.svg" alt="" width="30"></span><span>Метастазы</span></a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Методы лечения рака</strong>
+									<ul>
+										<li><a href="#">Метод лечения болезни</a></li>
+										<li><a href="#">Лечение заболевания</a></li>
+										<li><a href="#">Метод лечения</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+										<li><a href="#">Болезнь и метод лечения</a></li>
+										<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="folder">
+							<a href="#">Лечение</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Отделения</strong>
+									<ul class="top-menu-icons">
+										<li><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt="" width="33"></span><span>Офтальмология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt="" width="23"></span><span>Кардиология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt="" width="16"></span><span>Ортопедия</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt="" width="33"></span><span>Офтальмология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt="" width="23"></span><span>Кардиология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt="" width="16"></span><span>Ортопедия</span></a></li>
+									</ul>
+									<ul class="top-menu-next">
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Общая информация</strong>
+									<ul>
+										<li><a href="#">Метод лечения болезни</a></li>
+										<li><a href="#">Лечение заболевания</a></li>
+										<li><a href="#">Метод лечения</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+										<li><a href="#">Болезнь и метод лечения</a></li>
+										<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Врачи</a>
+						</li>
+						<li class="folder">
+							<a href="#">Диагностика</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-row-s">
+									<ul>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Высокая точность и информативность</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row-s">
+									<ul>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Высокая точность и информативность.</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="search">
+					<form><input type="search"><input type="submit" value=""></form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-sm">
+		<ul class="menu-sm-main">
+			<li>
+				<a href="#" class="menu-sm-toggle">Клиники</a>
+				<ul>
+					<li>
+						<ul class="menu-sm-first">
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Герцлия М.Ц.</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Герцлия М.Ц.</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">test</a></li>
+							<li><a href="#">Ассута</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Онкология</a>
+				<ul>
+					<li>
+						<strong>Направление</strong>
+						<ul>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+							<li><a href="#">Онкогематология и рак лимфатической системы</a></li>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+							<li><a href="#">Опухоли головного мозга</a></li>
+							<li><a href="#">Онкология головы и шеи</a></li>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong>Методы лечения рака</strong>
+						<ul>
+							<li><a href="#">Метод лечения</a></li>
+							<li><a href="#">Трансплантация костного мозга</a></li>
+							<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+							<li><a href="#">Болезнь и метод её лечения</a></li>
+							<li><a href="#">Метод лечения</a></li>
+							<li><a href="#">Трансплантация костного мозга</a></li>
+							<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+							<li><a href="#">Болезнь и метод её лечения</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Лечение</a>
+				<ul>
+					<li>
+						<strong>Отделения</strong>
+						<ul class="departments">
+							<li class="ophthalmology"><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt=""></span><span>Офтальмология</span></a></li>
+							<li class="cardiology"><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt=""></span><span>Кардиология</span></a></li>
+							<li class="orthopedics"><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt=""></span><span>Ортопедия</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong>Общая информация</strong>
+						<ul>
+							<li><a href="#">Особености методов лечения</a></li>
+							<li><a href="#">Лечение в клинике</a></li>
+							<li><a href="#">Клиника лечение</a></li>
+							<li><a href="#">Особености методов лечения</a></li>
+							<li><a href="#">Лечение в клинике</a></li>
+							<li><a href="#">Клиника лечение</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Врачи</a></li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Диагностика</a>
+				<ul>
+					<li>
+						<ul>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Высокая точность и информативность</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Госпиталь</a></li>
+							<li><a href="#">Высокая точность и информативность.</a></li>
+							<li><a href="#">Госпиталь</a></li>
+							<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Цены</a></li>
+			<li><a href="#">Отзывы</a></li>
+		</ul>
+		<ul class="menu-sm-bottom">
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">О медицине в Израиле</a></li>
+			<li><a href="#">Статьи</a></li>
+		</ul>
+	</div>
+	<div class="search-sm">
+		<div class="container">
+			<form><input type="search" placeholder="Введите заболевание, клинику или доктора"><input type="submit" value=""></form>
+		</div>
+	</div>
+	<div class="call-sm">
+		<div class="container">
+			<div class="call-sm-list">
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/israel.svg" alt="">Израиль:</span><span>+7 499 348 23 08</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/russia.svg" alt="">Россия:</span><span>+7 499 348 23 08</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/ukraine.svg" alt="">Украина:</span><span>+38 044 227 77 71</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/kazakhstan.svg" alt="">Казахстан:</span><span>+38 044 227 77 71</span></a></div>
+			</div>
+			<div class="call-sm-back">
+				<strong>Вам перезвонить?</strong>
+				<form><input type="tel"><input type="submit" value="заказать обратный звонок"></form>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="body">
+	<div class="container">
+		<div class="two_s_wrapper">
+			<div class="two_s_left">
+				<div class="breadcrumbs abs">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li>Цены</li>
+					</ul>
+				</div>
+				<div class="block-top block-top-prices">
+					<div class="block-top-in">
+						<h2>Цены на лечение<br> в клиниках Израиля</h2>
+						<p>На сегодняшний день израильская медицина предоставляет диагностические процедуры высочайшего качества для выявления различных патологий.<br> В этой стране ежегодно пациенты из разных стран получают современную терапию различных заболеваний, поскольку Израиль является единственным государством, где высокий уровень обследования и лечения доступен людям из большинства уголков мира.</p>
+					</div>
+				</div>
+				<div class="steps-wrap">
+					<h3>Помогаем оптимизировать затраты на лечение</h3>
+					<div class="steps_l">
+						<div class="step_l">
+							<div class="step_l_img"><img src="img/icons/hospital_white.svg" alt=""></div>
+							<div class="step_l_text">
+								<p>Фактор выгоды, помощи или преимущество</p>
+							</div>
+							<div class="tip_wr">
+								<p>С помощью этого сервиса вы делаете запрос напрямую в выбранные клиники. Вы получаете программу лечения и точную оценку стоимости на основе анализа вашего диагноза врачами, работающих в клиниках.</p>
+								<p>А мы поможем вам сориентироваться в выборе клиники и сэкономить на лечении до 30% без ущерба качеству.</p>
+							</div>
+						</div>
+						<div class="step_l">
+							<div class="step_l_img"><img src="img/icons/calculator_white.svg" alt=""></div>
+							<div class="step_l_text">
+								<p>Фактор выгоды, помощи или преимущество</p>
+							</div>
+							<div class="tip_wr">
+								<p> С помощью этого сервиса вы делаете запрос напрямую в выбранные клиники. Вы получаете программу лечения и точную оценку стоимости на основе анализа вашего диагноза врачами, работающих в клиниках.</p>
+								<p>А мы поможем вам сориентироваться в выборе клиники и сэкономить на лечении до 30% без ущерба качеству.</p>
+							</div>
+						</div>
+						<div class="step_l">
+							<div class="step_l_img"><img src="img/icons/payment-method_white.svg" alt=""></div>
+							<div class="step_l_text">
+								<p>Фактор выгоды, помощи или преимущество</p>
+							</div>
+							<div class="tip_wr">
+								<p>С помощью этого сервиса вы делаете запрос напрямую в выбранные клиники. Вы получаете программу лечения и точную оценку стоимости на основе анализа вашего диагноза врачами, работающих в клиниках.</p>
+								<p>А мы поможем вам сориентироваться в выборе клиники и сэкономить на лечении до 30% без ущерба качеству.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="prices-wrap">
+					<h3>Цены на лечение в клиниках Израиля</h3>
+					<div class="choose_clinic_wrapper">
+						<div>
+							<div class="choose_left">
+								<div class="demo">
+									<div class="control-group">
+										<select class="selectize" data-placeholder="Выберите направление">
+											<option value="">None</option>
+											<option value="4">Thomas Edison</option>
+											<option value="1">Nikola</option>
+											<option value="3">Nikola Tesla</option>
+											<option value="5">Arnold Schwarzenegger</option>
+										</select>
+									</div>
+								</div>
+								<div class="ch_list hidden-to-xs">
+									<ul>
+										<li><a href="#">Онкология</a></li>
+										<li><a href="#">Ортопедия</a></li>
+										<li><a href="#">Кардиология</a></li>
+										<li><a href="#">Офтальмология</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ch_list">
+							<ul>
+								<li><a href="#">Онкология</a></li>
+								<li><a href="#">Ортопедия</a></li>
+								<li><a href="#">Кардиология</a></li>
+								<li><a href="#">Офтальмология</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="prices-wrap-block">
+						<h4>Диагностика и лечение рака</h4>
+						<div class="prices-item active">
+							<div class="prices-row">
+								<div class="prices-col-left">Название услуги</div>
+								<div class="prices-col-right">Стоимость (USD)</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Онкологический chek-up</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Название диагностической процедуры</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Диагностическая процедура</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Компьютерная томография</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Название диагностической процедуры</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Диагностический метод исследования</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Процедура для диагностики заболевания</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+							<div class="prices-row">
+								<div class="prices-col-left">Онкологический chek-up</div>
+								<div class="prices-col-right">900-1050</div>
+							</div>
+						</div>
+						<div class="text-center"><a href="#modal-comp" rel="modal:open" class="def_btn">Получить смету на лечение</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="two_s_right">
+				<div class="aside_block sidebar-cons">
+					<h3 class="text-center">Консультация<br> по выбору клиники</h3>
+					<div class="avatr">
+						<img src="img/pics/ava.png" alt="">
+					</div>
+					<div class="about_doctor text-center">
+						<p>Екатерина</p>
+						<span>Кардиолог</span>
+					</div>
+					<p class="text-center">Я помогу вам правильно выбрать клинику с учетом особенностей заболевания, вашего бюджета.</p>
+					<a href="#modal-cons" rel="modal:open" class="def_btn inv modal_link">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+				</div>
+				<div class="aside_block blue_aside">
+					<h3>Почему<br> Israel Hospitals</h3>
+					<ul class="why_aside">
+						<li>
+							<img src="img/icons/hospital_white.svg" alt="">
+							<span>Прямое обращение в клинику</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/cash-register_white.svg" alt="">
+							<span>Олпата лечения в кассу клиники</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/24-hours_white.svg" alt="">
+							<span>Составление плана лечения в течении 24 часов</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/doctor_white.svg" alt="">
+							<span>Прямой доступ к лучшим докторам Израиля</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/piggy-bank_white.svg" alt="">
+							<span>Экономим вам до 30% стоимости лечения</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/plane_blue_white.svg" alt="">
+							<span>Помощь в организации перелета и проживания</span>
+							<div class="tip">
+								<b>Прямое обращение в клинику</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cons">
+		<div class="container">
+			<div class="wrapper_l">
+				<h2>Получите профессиональную консультацию<br> <span class="visible-to-xs">по лечению в Израиле в течение 2 часов</span></h2>
+				<div class="m_text_wrapper">
+					<div class="left_side visible-to-xs">
+						<ul class="list_modal">
+							<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+							<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+							<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+						</ul>
+					</div>
+					<div class="right_side">
+						<div class="aside_block">
+							<div class="avatr"><img src="img/pics/ava.png" alt=""></div>
+							<div class="about_doctor text-center">
+								<p>Иванова Екатерина</p>
+								<span>Врач-онколог</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form class="modal_bottom">
+					<div class="left_side">
+						<div class="compare_form_right">
+							<div class="flex-block">
+								<span class="name flex-el"><input placeholder="Имя" type="text"></span>
+								<div class="tel flex-el"><input placeholder="+7 (499)" type="tel"></div>
+							</div>
+						</div>
+					</div>
+					<div class="right_side"><button class="def_btn submit-done" type="submit">Получить консультацию</button> <a href="#modal-thanks-cons" rel="modal:open">thanks</a></div>
+					<div class="check_wrapper">
+						<input type="checkbox" class="checkbox" id="checkbox123">
+						<label for="checkbox123" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+					</div>
+				</form>
+				<ul class="list_modal hidden-to-xs">
+					<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+					<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+					<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="footer_wrapper">
+			<div class="two_s_left">
+				<div class="footer_block logo_block">
+					<div class="logo"><a href="#"><img src="img/pics/logo_@2x.png" alt=""></a></div>
+					<p>Выберите клинику, заполните форму <br>
+						онлайн и получите предложение</p>
+					<a class="def_btn" href="#modal-callback" rel="modal:open">Заказать обратный звонок</a>
+				</div>
+				<div class="footer_block foo_menu-1">
+					<ul>
+						<li><a href="#">Вопросы и ответы</a></li>
+						<li><a href="#">Инструкции</a></li>
+						<li><a href="#">Гинекология</a></li>
+					</ul>
+				</div>
+				<div class="footer_block foo_menu-2">
+					<ul>
+						<li><a href="#">Повышение квалификации в клиниках Израиля</a></li>
+						<li><a href="#">ЭКО в Израиле</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="two_s_right">
+				<ul>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Правила пользования</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="foo_socials">
+					<div><a href="tel:+74993482308">+7 499 348 23 08</a></div>
+					<div><a href="tel:+972547448434">+972 54 744 84 34</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="footer_copyright">© Israel-hospitals.ru, 2010 - 2018</div>
+<div id="modal-cons" class="modal">
+	<h2>Получите профессиональную консультацию<br> <span class="visible-to-xs">по лечению в Израиле в течение 2 часов</span></h2>
+	<div class="m_text_wrapper">
+		<div class="left_side visible-to-xs">
+			<ul class="list_modal">
+				<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+				<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+				<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+			</ul>
+		</div>
+		<div class="right_side">
+			<div class="aside_block">
+				<div class="avatr"><img src="img/pics/ava.png" alt=""></div>
+				<div class="about_doctor text-center">
+					<p>Екатерина</p>
+					<span>Кардиолог</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form class="modal_bottom">
+		<div class="left_side">
+			<div class="compare_form_right">
+				<div class="flex-block">
+					<span class="name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+				</div>
+			</div>
+		</div>
+		<div class="right_side"><button class="def_btn submit-done" type="submit">Получить консультацию</button> <a href="#modal-thanks-cons" rel="modal:open">thanks</a></div>
+		<div class="check_wrapper">
+			<input type="checkbox" class="checkbox" id="checkbox_agr" checked>
+			<label for="checkbox_agr" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+			<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+		</div>
+		<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+	</form>
+	<ul class="list_modal hidden-to-xs">
+		<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+		<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+		<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+	</ul>
+</div>
+<div id="modal-comp" class="modal">
+	<div class="compare_form_wrapper">
+		<h2>Сравните цены на лечения в клиниках</h2>
+		<span>В течение 24 часов вы получите ответ по выбранным клиникам</span>
+		<form class="form_wrapper">
+			<div class="compare_form_left">
+				<div class="demo">
+					<div class="control-group">
+						<select class="selectize" data-placeholder="Выберите направление">
+							<option value="">None</option>
+							<option value="4">Thomas Edison</option>
+							<option value="1">Nikola</option>
+							<option value="3">Nikola Tesla</option>
+							<option value="5">Arnold Schwarzenegger</option>
+						</select>
+					</div>
+				</div>
+				<div class="check_wrapper">
+					<ul>
+						<li>
+							<input type="checkbox" class="checkbox" id="checkbox1">
+							<label for="checkbox1" class="">
+								<span class="form_agree">Ассута</span>
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" class="checkbox" id="checkbox2">
+							<label for="checkbox2" class="">
+								<span class="form_agree">Ихилов</span>
+							</label>
+						</li>
+						<li>
+							<input checked="" type="checkbox" class="checkbox" id="checkbox3">
+							<label for="checkbox3" class="">
+								<span class="form_agree">Хадасса</span>
+							</label>
+						</li>
+						<li>
+							<input checked="" type="checkbox" class="checkbox" id="checkbox4">
+							<label for="checkbox4" class="">
+								<span class="form_agree">Ихилов</span>
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" class="checkbox" id="checkbox5">
+							<label for="checkbox5" class="">
+								<span class="form_agree">Ассута</span>
+							</label>
+						</li>
+						<li>
+							<input type="checkbox" class="checkbox" id="checkbox6">
+							<label for="checkbox6" class="">
+								<span class="form_agree">Хадасса</span>
+							</label>
+						</li>
+					</ul>
+					<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+				</div>
+				<div class="second_list">
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/planning_blue.svg" alt="">
+						</div>
+						<p>Точная смета и подробный план лечения</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/healthcare_blue.svg" alt="">
+						</div>
+						<p>Профессиональная консультация по выбору клиники</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/doctor_blue.svg" alt="">
+						</div>
+						<p>Доступ к лучшим врачам без очередей</p>
+					</div>
+				</div>
+			</div>
+			<div class="compare_form_right">
+				<div>
+					<span><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><input placeholder="E-mail" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><textarea placeholder="Вопрос или комментарий"></textarea><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<div class="file-upload">
+						<label>
+							<input type="file" name="file">
+							<span>Прикрепить диагноз</span>
+						</label>
+					</div>
+					<span><input class="def_btn submit-done" type="submit" value="Получить сравнение цен"><a href="#modal-thanks-comp" rel="modal:open"></a></span>
+					<div class="check_wrapper">
+						<input type="checkbox" class="checkbox" id="checkbox_m" checked>
+						<label for="checkbox_m" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+						<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+					</div>
+				</div>
+			</div>
+			<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+		</form>
+	</div>
+	<div class="message_guarantee"><span>Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</span></div>
+</div>
+<div id="modal-price" class="modal">
+	<div class="compare_form_wrapper">
+		<h2>Запрос и на индивидуальную<br> программу лечения в клинике Ассута</h2>
+		<span>Мы свяжемся с вами в течение 2 часов</span>
+		<form class="form_wrapper">
+			<div class="compare_form_left">
+				<div class="modal-clinic-img"><img src="img/pics/pic_clinic.jpg" alt=""></div>
+				<div class="second_list">
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/calculator.svg" alt="">
+						</div>
+						<p>Вы получите точную смету и план лечения без скрытых платежей</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/credit-card.svg" alt="">
+						</div>
+						<p>Клиника не взимает плату за рассмотрение вашего случая</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/doctor_blue.svg" alt="">
+						</div>
+						<p>Мы гарантируем, что ваше обращение будет рассмотрено специалистами клиники</p>
+					</div>
+				</div>
+			</div>
+			<div class="compare_form_right">
+				<div>
+					<span class="required"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required"><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><input placeholder="E-mail" type="text"></span>
+					<button type="button" class="show-field hidden-to-xs">Добавить описание</button>
+					<span class="hidden-field"><textarea placeholder="Опишите проблему или вопрос"></textarea></span>
+					<div class="file-upload">
+						<label><input type="file" name="file"><span>Прикрепить диагноз</span></label>
+					</div>
+					<span><input class="def_btn submit-done" type="submit" value="Получить стоимость лечения"><a  href="#modal-thanks-price" rel="modal:open">thanks</a></span>
+					<div class="check_wrapper">
+						<input type="checkbox" class="checkbox" id="checkbox_ms" checked>
+						<label for="checkbox_ms" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+		</form>
+	</div>
+	<div class="message_guarantee"><span>Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</span></div>
+</div>
+<div id="modal-callback" class="modal">
+	<h2>Заказ обратного звонка</h2>
+	<p>Отправте заявку и наш консультант оперативно представит подробную<br> консультацию по любому интересующему вопросу.</p>
+	<form>
+		<span class="tel"><input type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+		<input type="submit" class="def_btn submit-done" value="Заказать обратный звонок"><a  href="#modal-thanks-callback" rel="modal:open">thanks</a>
+		<div class="check_wrapper">
+			<input type="checkbox" class="checkbox" id="checkbox101" checked>
+			<label for="checkbox101" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+		</div>
+		<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+	</form>
+</div>
+<div id="modal-thanks-cons" class="modal modal-thanks">
+	<h2>Спасибо<br> за обращение!</h2>
+	<p>В ближайшее время я перезвоню вам и предоставлю<br> подробную консультацию по вашему вопросу.</p>
+	<div class="modal-thanks-doctor">
+		<div><img src="img/pics/ava.png" alt=""></div>
+		<strong>Екатерина</strong>
+		<span>Кардиолог</span>
+	</div>
+</div>
+<div id="modal-thanks-comp" class="modal modal-thanks">
+	<h2>Спасибо за заявку</h2>
+	<p>В течение 24 часов вы получите ответ по выбранным клиникам на указанный e-mail.<br> Также наш консультант перезвонит, чтобы рассказать о деталях</p>
+	<div class="second_list">
+		<div class="second_list_item">
+			<div class="second_list_item-img">
+				<img src="img/icons/planning_blue.svg" alt="">
+			</div>
+			<p>Точная смета и подробный план лечения</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img">
+				<img src="img/icons/healthcare_blue.svg" alt="">
+			</div>
+			<p>Профессиональная консультация по выбору клиники</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img">
+				<img src="img/icons/doctor_blue.svg" alt="">
+			</div>
+			<p>Доступ к лучшим врачам без очередей</p>
+		</div>
+	</div>
+</div>
+<div id="modal-thanks-price" class="modal modal-thanks">
+	<h2>Спасибо за заявку</h2>
+	<p>В течение 2 часов наш консультант свяжется с вами,<br> чтобы подробно ответить на ваш запрос</p>
+	<div class="second_list">
+		<div class="second_list_item">
+			<div class="second_list_item-img"><img src="img/icons/calculator.svg" alt=""></div>
+			<p>Вы получите точную смету и план лечения без скрытых платежей</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img"><img src="img/icons/credit-card.svg" alt=""></div>
+			<p>Клиника не взимает плату за рассмотрение вашего случая</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img">
+				<img src="img/icons/doctor_blue.svg" alt="">
+			</div>
+			<p>Мы гарантируем, что ваше обращение будет рассмотрено специалистами клиники</p>
+		</div>
+	</div>
+</div>
+<div id="modal-thanks-callback" class="modal modal-thanks modal-thanks-check">
+	<h2>Запрос отправлен</h2>
+	<p>Спасибо за обращение!<br> Мы перезвоним вам в ближайшее время!</p>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+<script src="js/selectize.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.modal.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

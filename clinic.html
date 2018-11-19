@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<title>clinic</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="stylesheet" href="css/jquery.modal.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/selectize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
+    </head>
+<body>
+<header>
+	<div class="container">
+		<div class="top_line">
+			<div class="top_line_text">Официальный представитель Израильских клиник</div>
+			<div class="top_line_menu">
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">О медицине в Израиле</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="blue_line_wrapper">
+		<div class="container">
+			<div class="two_s_left">
+				<div class="hidden-to-sm menu-toggle"><button type="button"><span></span></button></div>
+				<div class="logot"><a href="#"><img src="img/pics/logo.png" alt=""></a></div>
+				<div class="top_contacts">
+					<div class="num visible-to-md">
+						<p><img src="img/icons/israel.svg" alt="">Телефон в Израиле</p>
+						<a href="tel:+74993482308">+7 (499) 348 23 08</a>
+					</div>
+					<div class="num w">
+						<p><img src="img/icons/russia.svg" alt="">Телефон в России</p>
+						<a href="tel:+74993482308">+7 (499) 348 23 08</a>
+						<button><img src="img/icons/sort-down_white.svg" alt=""></button>
+					</div>
+					<div class="popup_numbers">
+						<div>
+							<img src="img/icons/russia.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Россия</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<div class="hidden-to-md">
+							<img src="img/icons/israel.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Израиль</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<div>
+							<img src="img/icons/ukraine.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Украинв</span><span>+38 044 227 77 71</span></a></div>
+						</div>
+						<div>
+							<img src="img/icons/kazakhstan.svg" alt="">
+							<div><a href="tel:+74993482308"><span>Казахстан</span><span>+7 (499) 348 23 08</span></a></div>
+						</div>
+						<button><img src="img/icons/sort-down_green.svg" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<div class="two_s_right"><a class="def_btn" href="#modal-callback" rel="modal:open">Заказать звонок</a></div>
+			<div class="header-sm hidden-to-sm">
+				<div class="button-contacts"><button type="button"><img src="img/icons/call.svg" alt="" width="15"></button></div>
+				<div class="button-search"><button type="button"><img src="img/icons/search-white.svg" alt="" width="15"></button></div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="header-in">
+				<div class="top-menu">
+					<ul>
+						<li class="folder">
+							<a href="#">Клиники</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Лучшие клиники</strong>
+									<ul class="top-menu-imgs">
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Шиба</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Рамбам</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Асаф ха-Рофэ</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Герцлия М.Ц.</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Ихилов</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Рабин</span></a></li>
+										<li><a href="#"><span><img src="img/pics/pic_clinic.jpg" alt=""></span><span>Ассута</span></a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Другие клиники</strong>
+									<ul>
+										<li><a href="#">Хорев</a></li>
+										<li><a href="#">Хадасса</a></li>
+										<li><a href="#">Шнайдер</a></li>
+										<li><a href="#">Рамат-Авив М.Ц</a></li>
+										<li><a href="#">Клиника Вольфсон</a></li>
+										<li><a href="#">Клиника Элиша</a></li>
+										<li><a href="#">Паула</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="folder">
+							<a href="#">Онкология</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Направления</strong>
+									<ul class="top-menu-icons">
+										<li><a href="#"><span><img src="img/icons/organs/thorax%201.svg" alt="" width="30"></span><span>Рак органов грудной клетки</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/bone%205.svg" alt="" height="31"></span><span>Рак костей и мягких тканей</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/dermis%209.svg" alt="" width="28"></span><span>Рак кожи</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/cells%202.svg" alt="" width="30"></span><span>Онкогематология и рак лимфатической системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/brain%206.svg" alt="" width="21"></span><span>Опухоли головного мозга</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/neuron%2010.svg" alt="" width="29"></span><span>Опухоли нервной системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/stomach%203.svg" alt="" width="30"></span><span>Опухоли органов пищеварения</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/pancreas%207.svg" alt="" width="30"></span><span>Рак эндокринной системы</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/head-and-neck%2011.svg" alt="" width="21"></span><span>Онкология головы и шеи</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/kidneys%204.svg" alt="" width="30"></span><span>Онкоурология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/uterus%208.svg" alt="" width="34"></span><span>Онкогинекология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/cancer%2012.svg" alt="" width="30"></span><span>Метастазы</span></a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Методы лечения рака</strong>
+									<ul>
+										<li><a href="#">Метод лечения болезни</a></li>
+										<li><a href="#">Лечение заболевания</a></li>
+										<li><a href="#">Метод лечения</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+										<li><a href="#">Болезнь и метод лечения</a></li>
+										<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="folder">
+							<a href="#">Лечение</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-wide">
+									<strong>Отделения</strong>
+									<ul class="top-menu-icons">
+										<li><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt="" width="33"></span><span>Офтальмология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt="" width="23"></span><span>Кардиология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt="" width="16"></span><span>Ортопедия</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt="" width="33"></span><span>Офтальмология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt="" width="23"></span><span>Кардиология</span></a></li>
+										<li><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt="" width="16"></span><span>Ортопедия</span></a></li>
+									</ul>
+									<ul class="top-menu-next">
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row">
+									<strong>Общая информация</strong>
+									<ul>
+										<li><a href="#">Метод лечения болезни</a></li>
+										<li><a href="#">Лечение заболевания</a></li>
+										<li><a href="#">Метод лечения</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+										<li><a href="#">Болезнь и метод лечения</a></li>
+										<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+										<li><a href="#">Лечение болезни</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Врачи</a>
+						</li>
+						<li class="folder">
+							<a href="#">Диагностика</a>
+							<ul class="top-menu-in">
+								<li class="top-menu-row-s">
+									<ul>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Высокая точность и информативность</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+								<li class="top-menu-row-s">
+									<ul>
+										<li><a href="#">Отделение больницы</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Высокая точность и информативность.</a></li>
+										<li><a href="#">Госпиталь</a></li>
+										<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+										<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+										<li><a href="#">Отделение больницы</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="search">
+					<form><input type="search"><input type="submit" value=""></form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-sm">
+		<ul class="menu-sm-main">
+			<li>
+				<a href="#" class="menu-sm-toggle">Клиники</a>
+				<ul>
+					<li>
+						<ul class="menu-sm-first">
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Герцлия М.Ц.</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">Ассута</a></li>
+							<li><a href="#">Герцлия М.Ц.</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Ихилов</a></li>
+							<li><a href="#">Асаф ха-Рофэ</a></li>
+							<li><a href="#">Шиба</a></li>
+							<li><a href="#">test</a></li>
+							<li><a href="#">Ассута</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Онкология</a>
+				<ul>
+					<li>
+						<strong>Направление</strong>
+						<ul>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+							<li><a href="#">Онкогематология и рак лимфатической системы</a></li>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+							<li><a href="#">Опухоли головного мозга</a></li>
+							<li><a href="#">Онкология головы и шеи</a></li>
+							<li><a href="#">Рак органов грудной клетки</a></li>
+							<li><a href="#">Рак костей и мягких тканей</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong>Методы лечения рака</strong>
+						<ul>
+							<li><a href="#">Метод лечения</a></li>
+							<li><a href="#">Трансплантация костного мозга</a></li>
+							<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+							<li><a href="#">Болезнь и метод её лечения</a></li>
+							<li><a href="#">Метод лечения</a></li>
+							<li><a href="#">Трансплантация костного мозга</a></li>
+							<li><a href="#">Методы лечения тяжелых заболеваний</a></li>
+							<li><a href="#">Болезнь и метод её лечения</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Лечение</a>
+				<ul>
+					<li>
+						<strong>Отделения</strong>
+						<ul class="departments">
+							<li class="ophthalmology"><a href="#"><span><img src="img/icons/organs/eye%2013.svg" alt=""></span><span>Офтальмология</span></a></li>
+							<li class="cardiology"><a href="#"><span><img src="img/icons/organs/heart%2014.svg" alt=""></span><span>Кардиология</span></a></li>
+							<li class="orthopedics"><a href="#"><span><img src="img/icons/organs/spinal-column%2015.svg" alt=""></span><span>Ортопедия</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Название отделения</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong>Общая информация</strong>
+						<ul>
+							<li><a href="#">Особености методов лечения</a></li>
+							<li><a href="#">Лечение в клинике</a></li>
+							<li><a href="#">Клиника лечение</a></li>
+							<li><a href="#">Особености методов лечения</a></li>
+							<li><a href="#">Лечение в клинике</a></li>
+							<li><a href="#">Клиника лечение</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Врачи</a></li>
+			<li>
+				<a href="#" class="menu-sm-toggle">Диагностика</a>
+				<ul>
+					<li>
+						<ul>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Высокая точность и информативность</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+							<li><a href="#">Госпиталь</a></li>
+							<li><a href="#">Высокая точность и информативность.</a></li>
+							<li><a href="#">Госпиталь</a></li>
+							<li><a href="#">Обследование врачом-терапевтом высшей категории</a></li>
+							<li><a href="#">Возможность пройти полное обследования всего организма</a></li>
+							<li><a href="#">Отделение больницы</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Цены</a></li>
+			<li><a href="#">Отзывы</a></li>
+		</ul>
+		<ul class="menu-sm-bottom">
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">О медицине в Израиле</a></li>
+			<li><a href="#">Статьи</a></li>
+		</ul>
+	</div>
+	<div class="search-sm">
+		<div class="container">
+			<form><input type="search" placeholder="Введите заболевание, клинику или доктора"><input type="submit" value=""></form>
+		</div>
+	</div>
+	<div class="call-sm">
+		<div class="container">
+			<div class="call-sm-list">
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/israel.svg" alt="">Израиль:</span><span>+7 499 348 23 08</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/russia.svg" alt="">Россия:</span><span>+7 499 348 23 08</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/ukraine.svg" alt="">Украина:</span><span>+38 044 227 77 71</span></a></div>
+				<div class="call-sm-item"><a href="tel+74993482308"><span><img src="img/icons/kazakhstan.svg" alt="">Казахстан:</span><span>+38 044 227 77 71</span></a></div>
+			</div>
+			<div class="call-sm-back">
+				<strong>Вам перезвонить?</strong>
+				<form><input type="tel"><input type="submit" value="заказать обратный звонок"></form>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="body light">
+	<div class="container">
+		<div class="two_s_wrapper">
+			<div class="two_s_left">
+				<div class="breadcrumbs on-white">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Клиники</a></li>
+						<li>Ассута</li>
+					</ul>
+				</div>
+				<div class="page-block pt">
+					<div class="clinic-in">
+						<div class="clinic-in-flex">
+							<div class="clinic-in-img"><img src="img/pics/Assuta-HaShalom-Tel-Aviv.jpg" alt=""></div>
+							<div class="clinic-in-info">
+								<h2>Клиника Ассута</h2>
+								<div class="rating_wrapper">
+									<span class="rating_stars">Рейтинг клиники</span>
+									<div class="stars">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star_yellow.svg" alt="">
+										<img src="img/icons/bookmark-star.svg" alt="">
+									</div>
+									<span class="rating_number">9.2</span>
+									<p>На основе 120 опрошенных пациентов</p>
+								</div>
+								<div class="clinic-in-sm">
+									<div>
+										<img src="img/icons/pin_blue.svg" alt="" width="20">
+										<p>Рамат-Ха-Хаяль</p>
+									</div>
+									<div>
+										<img src="img/icons/man-user_blue.svg" alt="" width="21">
+										<p>178 человек запросили стоимость лечения</p>
+									</div>
+								</div>
+								<div class="clinic-data">
+									<h3>Данные клиники</h3>
+									<div class="clinic-data-list">
+										<div class="clinic-data-row">
+											<div>Форма собственности</div>
+											<div>Частный медцентр</div>
+										</div>
+										<div class="clinic-data-row">
+											<div>Проведено операций за год</div>
+											<div>98000</div>
+										</div>
+										<div class="clinic-data-row">
+											<div>Аккредитация</div>
+											<div>Международная JCI</div>
+										</div>
+										<div class="clinic-data-row">
+											<div>Количество врачей</div>
+											<div>1500</div>
+										</div>
+										<div class="clinic-data-row">
+											<div>Количество отделений</div>
+											<div>11</div>
+										</div>
+										<div class="clinic-data-row">
+											<div>Количество койкомест</div>
+											<div>1500</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clinic-tabs custom-tabs">
+							<div class="tabs-nav clinic-tabs-nav">
+								<ul>
+									<li class="active"><button data-href="#ct1">О клинике</button></li>
+									<li><button data-href="#ct2">Отделения</button></li>
+									<li><button data-href="#ct3">Цены</button></li>
+									<li><button data-href="#ct4">Врачи</button></li>
+								</ul>
+							</div>
+							<div class="clinic-tabs-list">
+								<div id="ct1" class="tabs-item clinic-tabs-item active">
+									<h3>О клинике Ассута</h3>
+									<p>Ассута (Assuta) — крупнейшая клиника в Израиле, по праву считающаяся одним из лучших медицинских центров мира. История возникновения и развития уникального комплекса лечебных и диагностических учреждений уходит корнями в тридцатые годы XX века и начинается с основания частной больницы «Ассута» в северо-восточном пригороде Тель-Авива. Сегодня,Ассута оказывает помощь пациентам, обратившимся за медицинской помощью в Израиль по адресу Рамат-а-Хаяль, ул. Ха Барзель, 20, г.Тель-Авив.</p>
+									<p>С момента открытия руководством клиники были отвергнуты устаревшие стандарты предоставления медицинских услуг и внедрены в практику революционные подходы к оказанию медицинской помощи, основывающейся на принципах: внимания к мелочам; поэтапности диагностических мер от общих к частным; предпочтительности консервативного лечения оперативному; индивидуализации лечебных мер и исключения усредненных стандартов терапии; коррекции лечения посредством контроля динамики выздоровления; недопущении негативного влияния лечения на незадействованные в терапии органы и системы; установления доверительных отношений в рамках взаимодействия врач-пациент, способствующих психологическому комфорту, хорошо влияющему на результаты лечения.</p>
+									<p>Родоначальниками медицины нового поколения были воплощены идеи медицинского искусства (ars medicina) в принципиально новом госпитале, ставшим в последствии одним из лучших в мире и прославившим Израиль на мировой медицинской арене.</p>
+									<div class="tab-iframe">
+										<iframe src="https://www.youtube.com/embed/6v2L2UGZJAM" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<h4>Уровень качества услуг в клиниках Ассута</h4>
+									<p>Ассута является частным медицинским центром. Его кадровая политика основывается на привлечении к сотрудничеству лучших специалистов со всего мира на контрактной основе. Гарантия получения медицинских услуг наивысшего качества при обращении в группу клиник Ассута в Тель-Авиве подтверждается наличием международной акредитации по системе Joint Commission International, разработанной двумя «китами» оценки класса медицинского бизнеса — международным обществом по качеству в здравоохранении (The International Society for Quality in Health/ISQH) и обществом международной аккредитации систем здравоохранения (The Society for International Healthcare Accreditation/SOFIHA).</p>
+									<div class="un-list">Согласно данным статистики, ежегодно в сети клиник Ассута в Израиле осуществляется:</div>
+									<ul>
+										<li>более 85000 операций различной степени сложности;</li>
+										<li>235000 диагностических процедур;</li>
+										<li>более 20000 томографических обследований;</li>
+										<li>не менее 5000 протоколов ЭКО с подтвержденным достижением беременности;</li>
+										<li>более 4000 малоинвазивных операций по сердечной катетеризации.</li>
+									</ul>
+									<div class="tab-iframe">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10099.758296355192!2d25.380710869775395!3d50.73960959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1542207268830" style="border:0" allowfullscreen></iframe>
+									</div>
+								</div>
+								<div id="ct2" class="tabs-item clinic-tabs-item">
+									<h3>Хирургия и возможности реабилитации пациентов в медицинских центрах Ассута</h3>
+									<p>Ассута (Assuta) — крупнейшая клиника в Израиле, по праву считающаяся одним из лучших медицинских центров мира. История возникновения и развития уникального комплекса лечебных и диагностических учреждений уходит корнями в тридцатые годы XX века и начинается с основания частной больницы «Ассута» в северо-восточном пригороде Тель-Авива. Сегодня,Ассута оказывает помощь пациентам, обратившимся за медицинской помощью в Израиль по адресу Рамат-а-Хаяль, ул. Ха Барзель, 20, г.Тель-Авив.</p>
+									<p>С момента открытия руководством клиники были отвергнуты устаревшие стандарты предоставления медицинских услуг и внедрены в практику революционные подходы к оказанию медицинской помощи, основывающейся на принципах: внимания к мелочам; поэтапности диагностических мер от общих к частным; предпочтительности консервативного лечения оперативному; индивидуализации лечебных мер и исключения усредненных стандартов терапии; коррекции лечения посредством контроля динамики выздоровления; недопущении негативного влияния лечения на незадействованные в терапии органы и системы; установления доверительных отношений в рамках взаимодействия врач-пациент, способствующих психологическому комфорту, хорошо влияющему на результаты лечения.</p>
+									<p>Родоначальниками медицины нового поколения были воплощены идеи медицинского искусства (ars medicina) в принципиально новом госпитале, ставшим в последствии одним из лучших в мире и прославившим Израиль на мировой медицинской арене.</p>
+									<h3>Пластическая хирургия</h3>
+									<p>Ассута (Assuta) — крупнейшая клиника в Израиле, по праву считающаяся одним из лучших медицинских центров мира. История возникновения и развития уникального комплекса лечебных и диагностических учреждений уходит корнями в тридцатые годы XX века и начинается с основания частной больницы «Ассута» в северо-восточном пригороде Тель-Авива. Сегодня,Ассута оказывает помощь пациентам, обратившимся за медицинской помощью в Израиль по адресу Рамат-а-Хаяль, ул. Ха Барзель, 20, г.Тель-Авив.</p>
+									<p>С момента открытия руководством клиники были отвергнуты устаревшие стандарты предоставления медицинских услуг и внедрены в практику революционные подходы к оказанию медицинской помощи, основывающейся на принципах: внимания к мелочам; поэтапности диагностических мер от общих к частным; предпочтительности консервативного лечения оперативному; индивидуализации лечебных мер и исключения усредненных стандартов терапии; коррекции лечения посредством контроля динамики выздоровления; недопущении негативного влияния лечения на незадействованные в терапии органы и системы; установления доверительных отношений в рамках взаимодействия врач-пациент, способствующих психологическому комфорту, хорошо влияющему на результаты лечения.</p>
+									<p>Родоначальниками медицины нового поколения были воплощены идеи медицинского искусства (ars medicina) в принципиально новом госпитале, ставшим в последствии одним из лучших в мире и прославившим Израиль на мировой медицинской арене.</p>
+									<h3>Педиатрия в Ассуте</h3>
+									<p>Ассута (Assuta) — крупнейшая клиника в Израиле, по праву считающаяся одним из лучших медицинских центров мира. История возникновения и развития уникального комплекса лечебных и диагностических учреждений уходит корнями в тридцатые годы XX века и начинается с основания частной больницы «Ассута» в северо-восточном пригороде Тель-Авива. Сегодня,Ассута оказывает помощь пациентам, обратившимся за медицинской помощью в Израиль по адресу Рамат-а-Хаяль, ул. Ха Барзель, 20, г.Тель-Авив.</p>
+									<ul>
+										<li>более 85000 операций различной степени сложности;</li>
+										<li>235000 диагностических процедур;</li>
+										<li>более 20000 томографических обследований;</li>
+										<li>не менее 5000 протоколов ЭКО с подтвержденным достижением беременности;</li>
+										<li>более 4000 малоинвазивных операций по сердечной катетеризации.</li>
+									</ul>
+								</div>
+								<div id="ct3" class="tabs-item clinic-tabs-item">
+									<div class="filter-select">
+										<div class="control-group">
+											<select class="selectize" data-placeholder="Выберите направление">
+												<option value="">None</option>
+												<option value="4">Thomas Edison</option>
+												<option value="1">Nikola</option>
+												<option value="3">Nikola Tesla</option>
+												<option value="5">Arnold Schwarzenegger</option>
+											</select>
+										</div>
+									</div>
+									<div>
+										<div class="prices-row">
+											<div class="prices-col-left">Название услуги</div>
+											<div class="prices-col-right">Стоимость (USD)</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Онкологический chek-up</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Название диагностической процедуры</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Диагностическая процедура</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Компьютерная томография</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Название диагностической процедуры</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Диагностический метод исследования</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Процедура для диагностики заболевания</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+										<div class="prices-row">
+											<div class="prices-col-left">Онкологический chek-up</div>
+											<div class="prices-col-right">900-1050</div>
+										</div>
+									</div>
+								</div>
+								<div id="ct4" class="tabs-item clinic-tabs-item">
+									<div class="filter-select">
+										<div class="control-group">
+											<select class="selectize" data-placeholder="Выберите направление">
+												<option value="">None</option>
+												<option value="4">Thomas Edison</option>
+												<option value="1">Nikola</option>
+												<option value="3">Nikola Tesla</option>
+												<option value="5">Arnold Schwarzenegger</option>
+											</select>
+										</div>
+									</div>
+									<div class="doctors-list">
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+										<div class="doctors-item">
+											<div class="doctors-img">
+												<div class="doctors-img-in"><img src="img/pics/doctor.jpg" alt=""></div>
+											</div>
+											<div class="doctors-cont">
+												<div class="doctors-pos">Профессор онкологии</div>
+												<div class="doctors-name">Рами Бен Йосеф</div>
+												<div class="doctors-text">Заведует Институтом радиотерапии в МЦ Рамбам; заведует отделением радиотерапии в центре Ассута</div>
+												<div class="doctors-more"><a href="#" class="def_btn inv">Подробнее</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="two_s_right">
+				<div class="aside_block stick">
+					<div class="request">
+						<h3>Запрос в клинику</h3>
+						<p>Получите просчет стоимости лечения по вашему диагнозу от клиники в течение 48 часов</p>
+						<a href="#modal-price" rel="modal:open" class="def_btn">Подать запрос</a>
+						<div class="request-list">
+							<div class="request-item">
+								<div class="request-icon"><img src="img/icons/calculator.svg" alt="" width="38"></div>
+								<div class="request-text">Точная смета без скрытых платежей</div>
+							</div>
+							<div class="request-item">
+								<div class="request-icon"><img src="img/icons/credit-card.svg" alt="" width="45"></div>
+								<div class="request-text">Не взимается плату за рассмотрение вашего случая</div>
+							</div>
+							<div class="request-item">
+								<div class="request-icon"><img src="img/icons/doctor_blue.svg" alt="" width="40"></div>
+								<div class="request-text">Гарантия рассмотрения обращения специалистами клиники</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hidden-to-sm container">
+		<div class="request">
+			<h3>Запрос в клинику</h3>
+			<p>Получите просчет стоимости лечения по вашему диагнозу от клиники в течение 48 часов</p>
+			<a href="#modal-price" rel="modal:open" class="def_btn">Подать запрос</a>
+			<div class="request-list">
+				<div class="request-item">
+					<div class="request-icon"><img src="img/icons/calculator.svg" alt="" width="38"></div>
+					<div class="request-text">Точная смета без скрытых платежей</div>
+				</div>
+				<div class="request-item">
+					<div class="request-icon"><img src="img/icons/credit-card.svg" alt="" width="45"></div>
+					<div class="request-text">Не взимается плату за рассмотрение вашего случая</div>
+				</div>
+				<div class="request-item">
+					<div class="request-icon"><img src="img/icons/doctor_blue.svg" alt="" width="40"></div>
+					<div class="request-text">Гарантия рассмотрения обращения специалистами клиники</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="footer_wrapper">
+			<div class="two_s_left">
+				<div class="footer_block logo_block">
+					<div class="logo"><a href="#"><img src="img/pics/logo_@2x.png" alt=""></a></div>
+					<p>Выберите клинику, заполните форму <br>
+						онлайн и получите предложение</p>
+					<a class="def_btn" href="#modal-callback" rel="modal:open">Заказать обратный звонок</a>
+				</div>
+				<div class="footer_block foo_menu-1">
+					<ul>
+						<li><a href="#">Вопросы и ответы</a></li>
+						<li><a href="#">Инструкции</a></li>
+						<li><a href="#">Гинекология</a></li>
+					</ul>
+				</div>
+				<div class="footer_block foo_menu-2">
+					<ul>
+						<li><a href="#">Повышение квалификации в клиниках Израиля</a></li>
+						<li><a href="#">ЭКО в Израиле</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="two_s_right">
+				<ul>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Правила пользования</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="foo_socials">
+					<div><a href="tel:+74993482308">+7 499 348 23 08</a></div>
+					<div><a href="tel:+972547448434">+972 54 744 84 34</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="footer_copyright">© Israel-hospitals.ru, 2010 - 2018</div>
+<div id="modal-cons" class="modal">
+	<h2>Получите профессиональную консультацию<br> <span class="visible-to-xs">по лечению в Израиле в течение 2 часов</span></h2>
+	<div class="m_text_wrapper">
+		<div class="left_side visible-to-xs">
+			<ul class="list_modal">
+				<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+				<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+				<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+			</ul>
+		</div>
+		<div class="right_side">
+			<div class="aside_block">
+				<div class="avatr"><img src="img/pics/ava.png" alt=""></div>
+				<div class="about_doctor text-center">
+					<p>Екатерина</p>
+					<span>Кардиолог</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form class="modal_bottom">
+		<div class="left_side">
+			<div class="compare_form_right">
+				<div class="flex-block">
+					<span class="name flex-el"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="tel flex-el"><input placeholder="+7 (499)" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+				</div>
+			</div>
+		</div>
+		<div class="right_side"><button class="def_btn submit-done" type="submit">Получить консультацию</button> <a href="#modal-thanks-cons" rel="modal:open">thanks</a></div>
+		<div class="check_wrapper">
+			<input type="checkbox" class="checkbox" id="checkbox_agr" checked>
+			<label for="checkbox_agr" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+			<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+		</div>
+		<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+	</form>
+	<ul class="list_modal hidden-to-xs">
+		<li>Подбор лучшей клиники и органиция предварительной консультации без выезда в Израиль</li>
+		<li>Прозрачный план лечения с конкрентикой по клиникам, ценам, пребыванию в Израиле</li>
+		<li>Предложение наиболее прогрессивных и эффективных методик диагностики и лечения</li>
+	</ul>
+</div>
+<div id="modal-price" class="modal">
+	<div class="compare_form_wrapper">
+		<h2>Запрос и на индивидуальную<br> программу лечения в клинике Ассута</h2>
+		<span>Мы свяжемся с вами в течение 2 часов</span>
+		<form class="form_wrapper">
+			<div class="compare_form_left">
+				<div class="modal-clinic-img"><img src="img/pics/pic_clinic.jpg" alt=""></div>
+				<div class="second_list">
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/calculator.svg" alt="">
+						</div>
+						<p>Вы получите точную смету и план лечения без скрытых платежей</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/credit-card.svg" alt="">
+						</div>
+						<p>Клиника не взимает плату за рассмотрение вашего случая</p>
+					</div>
+					<div class="second_list_item">
+						<div class="second_list_item-img">
+							<img src="img/icons/doctor_blue.svg" alt="">
+						</div>
+						<p>Мы гарантируем, что ваше обращение будет рассмотрено специалистами клиники</p>
+					</div>
+				</div>
+			</div>
+			<div class="compare_form_right">
+				<div>
+					<span class="required"><input placeholder="Имя" type="text"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span class="required"><input placeholder="Телефон" type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+					<span><input placeholder="E-mail" type="text"></span>
+					<button type="button" class="show-field hidden-to-xs">Добавить описание</button>
+					<span class="hidden-field"><textarea placeholder="Опишите проблему или вопрос"></textarea></span>
+					<div class="file-upload">
+						<label><input type="file" name="file"><span>Прикрепить диагноз</span></label>
+					</div>
+					<span><input class="def_btn submit-done" type="submit" value="Получить стоимость лечения"><a  href="#modal-thanks-price" rel="modal:open">thanks</a></span>
+					<div class="check_wrapper">
+						<input type="checkbox" class="checkbox" id="checkbox_ms" checked>
+						<label for="checkbox_ms" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+		</form>
+	</div>
+	<div class="message_guarantee"><span>Мы гарантируем безопасность передачи персональных данных. Используется защищенное соединение SSL</span></div>
+</div>
+<div id="modal-callback" class="modal">
+	<h2>Заказ обратного звонка</h2>
+	<p>Отправте заявку и наш консультант оперативно представит подробную<br> консультацию по любому интересующему вопросу.</p>
+	<form>
+		<span class="tel"><input type="tel"><span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span></span>
+		<input type="submit" class="def_btn submit-done" value="Заказать обратный звонок"><a  href="#modal-thanks-callback" rel="modal:open">thanks</a>
+		<div class="check_wrapper">
+			<input type="checkbox" class="checkbox" id="checkbox101" checked>
+			<label for="checkbox101" class=""><span class="form_agree">Отправляя данные я принимаю соглашение об использовании персональных данных</span></label>
+		</div>
+		<div class="wpcf7-validation-errors">В одном или нескольких полях присутствуют ошибки. Пожалуйста проверьте их и попробуйте еще раз.</div>
+	</form>
+</div>
+<div id="modal-thanks-price" class="modal modal-thanks">
+	<h2>Спасибо за заявку</h2>
+	<p>В течение 2 часов наш консультант свяжется с вами,<br> чтобы подробно ответить на ваш запрос</p>
+	<div class="second_list">
+		<div class="second_list_item">
+			<div class="second_list_item-img"><img src="img/icons/calculator.svg" alt=""></div>
+			<p>Вы получите точную смету и план лечения без скрытых платежей</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img"><img src="img/icons/credit-card.svg" alt=""></div>
+			<p>Клиника не взимает плату за рассмотрение вашего случая</p>
+		</div>
+		<div class="second_list_item">
+			<div class="second_list_item-img">
+				<img src="img/icons/doctor_blue.svg" alt="">
+			</div>
+			<p>Мы гарантируем, что ваше обращение будет рассмотрено специалистами клиники</p>
+		</div>
+	</div>
+</div>
+<div id="modal-thanks-cons" class="modal modal-thanks">
+	<h2>Спасибо<br> за обращение!</h2>
+	<p>В ближайшее время я перезвоню вам и предоставлю<br> подробную консультацию по вашему вопросу.</p>
+	<div class="modal-thanks-doctor">
+		<div><img src="img/pics/ava.png" alt=""></div>
+		<strong>Екатерина</strong>
+		<span>Кардиолог</span>
+	</div>
+</div>
+<div id="modal-thanks-callback" class="modal modal-thanks modal-thanks-check">
+	<h2>Запрос отправлен</h2>
+	<p>Спасибо за обращение!<br> Мы перезвоним вам в ближайшее время!</p>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+<script src="js/selectize.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.modal.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
