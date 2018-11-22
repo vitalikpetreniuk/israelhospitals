@@ -472,8 +472,8 @@
     margin-bottom: 9px;
     min-height: 36px; }
   .howitworks_text p {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
     .howitworks_text p br {
       display: none; }
   .howitworks_item-img {
@@ -527,8 +527,8 @@
       font-size: 14px;
       color: #858585; }
     .about_doctor.text-center + p {
-      font-size: 13px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 18px;
       margin-bottom: 15px; }
   .diagram_text .line_w .line {
     -webkit-box-sizing: border-box;
@@ -664,8 +664,8 @@
   .prog-img {
     height: 220px; }
   .prog-title {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     min-height: 52px; }
   .advtg-icon {
     width: 90px; }
@@ -674,8 +674,8 @@
   .advtg-text {
     width: -webkit-calc(100% - 90px);
     width: calc(100% - 90px);
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .text-block {
     padding: 40px 0; }
   .page-block h1 {
@@ -704,8 +704,8 @@
       .prices-title h3 {
         font-size: 18px; }
   .subtitle, .text-list li {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .clinic-wrap {
     padding: 45px 0; }
     .clinic-wrap h2 {
@@ -720,8 +720,8 @@
     font-size: 24px;
     line-height: 26px; }
   .custom-tabs .tabs-item > p, .custom-tabs .tabs-item > ul, .custom-tabs .tabs-item .un-list, .custom-tabs .tabs-item .doctor-tabs-text > p, .custom-tabs .tabs-item .doctor-tabs-text > ul, .custom-tabs .tabs-item .doctor-tabs-text .un-list, .custom-tabs .tabs-item .doctor-tabs-block > p, .custom-tabs .tabs-item .doctor-tabs-block > ul, .custom-tabs .tabs-item .doctor-tabs-block .un-list {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .custom-tabs .tabs-item li:before, .custom-tabs .tabs-item .doctor-tabs-text li:before, .custom-tabs .tabs-item .doctor-tabs-block li:before {
     top: 5px !important; }
   .tab-iframe {
@@ -733,21 +733,21 @@
       line-height: 26px;
       margin-bottom: 25px; }
     .treatment p, .treatment li, .treatment .prices-subtitle, .stat p, .stat li, .stat .prices-subtitle, .doctors p, .doctors li, .doctors .prices-subtitle, .diagnostics p, .diagnostics li, .diagnostics .prices-subtitle, .prices-in p, .prices-in li, .prices-in .prices-subtitle, .cons p, .cons li, .cons .prices-subtitle {
-      font-size: 13px;
-      line-height: 16px; }
+      font-size: 14px;
+      line-height: 18px; }
   .text-block h2 {
     font-size: 24px;
     line-height: 26px; }
   .text-block p {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .cons .m_text_wrapper .right_side {
     width: 100%; }
   .stat h2 br {
     display: none; }
   .doctors-text {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .doctors-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -861,8 +861,8 @@
         .modal-clinic-img + .second_list .second_list_item:not(:last-child) {
           margin-bottom: 20px; }
         .modal-clinic-img + .second_list .second_list_item p {
-          font-size: 13px;
-          line-height: 16px; }
+          font-size: 14px;
+          line-height: 18px; }
     .modal .message_guarantee {
       font-size: 12px;
       line-height: 14px;
@@ -912,50 +912,53 @@
         font-weight: 300; }
         .modal_bottom + .list_modal li:not(:last-child) {
           margin-bottom: 20px; }
-    .modal-thanks a.close-modal {
-      -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-              transform: rotate(180deg);
-      width: 25px;
-      height: 17px;
-      background: url("../img/icons/arrow-pointing-to-right.svg") center no-repeat !important;
-      -webkit-background-size: 100% auto !important;
-              background-size: 100% auto !important; }
-    .modal-thanks h2 {
-      margin-bottom: 8px; }
-      .modal-thanks h2 br {
+    .modal-thanks {
+      padding-top: 80px !important; }
+      .modal-thanks a.close-modal {
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+        width: 25px;
+        height: 17px;
+        background: url("../img/icons/arrow-pointing-to-right.svg") center no-repeat !important;
+        -webkit-background-size: 100% auto !important;
+                background-size: 100% auto !important;
+        top: 40px; }
+      .modal-thanks h2 {
+        margin-bottom: 8px; }
+        .modal-thanks h2 br {
+          display: none; }
+        .modal-thanks h2 + p {
+          font-size: 14px;
+          line-height: 18px; }
+      .modal-thanks-doctor {
+        margin-top: 25px;
+        line-height: 22px; }
+        .modal-thanks-doctor div {
+          width: 165px;
+          height: 165px; }
+        .modal-thanks-doctor strong {
+          font-weight: 400;
+          font-size: 18px; }
+        .modal-thanks-doctor span {
+          font-size: 14px; }
+      .modal-thanks .second_list {
+        margin-top: 40px; }
+        .modal-thanks .second_list .second_list_item p {
+          font-size: 14px;
+          line-height: 18px;
+          padding-left: 18px; }
+        .modal-thanks .second_list .second_list_item:not(:last-child) {
+          margin-bottom: 20px; }
+      .modal-thanks-check br {
         display: none; }
-      .modal-thanks h2 + p {
-        font-size: 13px;
-        line-height: 16px; }
-    .modal-thanks-doctor {
-      margin-top: 25px;
-      line-height: 22px; }
-      .modal-thanks-doctor div {
-        width: 165px;
-        height: 165px; }
-      .modal-thanks-doctor strong {
-        font-weight: 400;
-        font-size: 18px; }
-      .modal-thanks-doctor span {
-        font-size: 14px; }
-    .modal-thanks .second_list {
-      margin-top: 40px; }
-      .modal-thanks .second_list .second_list_item p {
-        font-size: 13px;
-        line-height: 16px;
-        padding-left: 18px; }
-      .modal-thanks .second_list .second_list_item:not(:last-child) {
-        margin-bottom: 20px; }
-    .modal-thanks-check br {
-      display: none; }
-    .modal-thanks-check h2 {
-      -webkit-background-size: 60px auto;
-              background-size: 60px auto;
-      padding-bottom: 70px; }
+      .modal-thanks-check h2 {
+        -webkit-background-size: 60px auto;
+                background-size: 60px auto;
+        padding-bottom: 70px; }
   #modal-callback h2 + p {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
     #modal-callback h2 + p br {
       display: none; }
   .compare_form_right > div span input[type="submit"] {
@@ -1000,7 +1003,7 @@
   .step_l_text strong {
     font-size: 14px; }
   .step_l_text p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px; }
   .step_l_text {
     width: -webkit-calc(100% - 65px);
@@ -1035,8 +1038,8 @@
         -ms-flex-align: start;
             align-items: flex-start; }
   .block-top-prices .block-top-in p {
-    font-size: 13px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .choose_clinic_wrapper {
     margin-top: 35px; }
     .choose_clinic_wrapper > div {
@@ -1175,8 +1178,8 @@
     padding-left: 0;
     margin-top: 24px; }
   .blue_section_wrapper ul li {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     list-style: none;
     padding-left: 16px;
     position: relative; }
@@ -1209,8 +1212,8 @@
       margin-bottom: 7px; }
       .compare h2 + span {
         color: #353b44;
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 18px;
         text-align: center;
         display: block; }
     .compare .form_wrapper {
@@ -1240,8 +1243,8 @@
     .compare .second_list {
       margin-bottom: 35px; }
     .compare .second_list .second_list_item p {
-      font-size: 13px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 18px;
       padding-left: 16px; }
     .compare .message_guarantee {
       margin: 0 -30px;
@@ -1297,8 +1300,8 @@
     text-align: right;
     font-size: 12px; }
   .comments_slider_item-text p {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 20px 0 0; }
   .comments_slider_item-text .simple_link {
     font-size: 12px;
@@ -1542,8 +1545,8 @@
   .prog-img {
     height: 60vw; }
   .prog-title {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     min-height: 52px; }
   .advtg-item {
     width: 100%;
