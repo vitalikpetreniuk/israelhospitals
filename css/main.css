@@ -749,6 +749,8 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .choose_clinic_wrapper h2 {
+    margin-bottom: 30px; }
   .choose_clinic_wrapper > div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -769,7 +771,8 @@ header {
     position: relative;
     width: -webkit-calc(50% - 30px);
     width: calc(50% - 30px);
-    padding-left: 15px; }
+    padding-left: 15px;
+    margin-top: 49px; }
     .choose_clinic_wrapper .choose_right p {
       position: absolute;
       top: 35px;
@@ -1111,7 +1114,8 @@ header {
 
 .custom-tabs .tabs-item > p, .custom-tabs .tabs-item > ul, .custom-tabs .tabs-item .doctor-tabs-text > p, .custom-tabs .tabs-item .doctor-tabs-text > ul {
   font-size: 15px;
-  line-height: 22px; }
+  line-height: 22px;
+  font-weight: 300; }
   .custom-tabs .tabs-item > p:not(:last-child), .custom-tabs .tabs-item > ul:not(:last-child), .custom-tabs .tabs-item .doctor-tabs-text > p:not(:last-child), .custom-tabs .tabs-item .doctor-tabs-text > ul:not(:last-child) {
     margin-bottom: 15px; }
   .custom-tabs .tabs-item > p + .tab-iframe, .custom-tabs .tabs-item > ul + .tab-iframe, .custom-tabs .tabs-item .doctor-tabs-text > p + .tab-iframe, .custom-tabs .tabs-item .doctor-tabs-text > ul + .tab-iframe {
